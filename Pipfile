@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 django-htmx = "*"
+whitenoise = "*"
 
 [dev-packages]
 
