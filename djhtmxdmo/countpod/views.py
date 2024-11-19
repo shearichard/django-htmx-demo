@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request, f"todospod/index.html", {})
+    return render(request, f"countpod/index.html", {})
 

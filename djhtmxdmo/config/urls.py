@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('todospod/', include('todospod.urls')),
+    path('countpod/', include('countpod.urls')),
 ]
