@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import CountLocation 
+from .models import CountPoint 
+
+admin.site.register(CountLocation)
+admin.site.register(CountPoint)
