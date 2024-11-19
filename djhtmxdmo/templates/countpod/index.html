@@ -1,4 +1,21 @@
 {% load static %}
 <h1>Count - Plain Old Django</h1>
 <p>This is a placeholder page for the index of the countpod app</p>
+<table>
+    <tr>
+        <td>
+            <form method="POST" action="{% url 'countpod:countup'%}" >
+                {% csrf_token %}
+                <input type="submit" value="+" action="increment" >
+            </form>
+        </td>
+        <td>
+            <form method="POST" action="{% url 'countpod:countdown'%}" method="post">
+                {% csrf_token %}
+                <input type="submit" value="-">
+            </form>
+        </td>
+    </tr>
+</table>
+
 
